@@ -1,0 +1,33 @@
+Git:
+
+	Fork the repo ‘Skill_DB’, URL: https://github.com/kamalteja/Skill_DB.git into your accounts.
+	
+	Clone it into your local PC’s for editing the repo.
+	
+	Commit and push the files or folders into the forked repo, i.e., into the repo of your account.
+	
+	Put up a new pull request.
+
+
+
+To Sync with admin Skill_DB:
+
+git remote -v
+Output:
+# origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+# origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+
+git remote add upstream https://github.com/kamalteja/Skill_DB.git
+
+git remote -v
+
+Output:
+# origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+# origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+# upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
+# upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
+
+Now sync from ORIGINAL_REPOSITORY or updating fork repo
+git fetch upstream
+git checkout master
+git merge upstream/master
